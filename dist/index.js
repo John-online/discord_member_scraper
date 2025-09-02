@@ -18,7 +18,7 @@ const node_fs_1 = tslib_1.__importStar(require("node:fs"));
 const database_1 = tslib_1.__importDefault(require("./database"));
 function main() {
     const tokens = Array.from({ length: 15 }, (_, i) => {
-        console.log(`Checking for TOKEN_${i + 1}`, process.env[`TOKEN_${i + 1}`]);
+        // console.log(`Checking for TOKEN_${i + 1}`, process.env[`TOKEN_${i + 1}`]);
         return process.env[`TOKEN_${i + 1}`];
     }).filter((token) => typeof token === "string" && token.length > 0);
     if (tokens.length === 0) {
