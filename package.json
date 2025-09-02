@@ -27,7 +27,7 @@
   },
   "homepage": "https://github.com/John-online/discord_member_scraper#readme",
   "dependencies": {
-    "discord.js-selfbot-v13": "^3.7.0",
+    "discord.js-selfbot-v13": "^2.15.1",
     "dotenv": "^17.2.1",
     "ts-node": "^10.9.2"
   }
