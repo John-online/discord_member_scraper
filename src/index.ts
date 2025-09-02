@@ -172,7 +172,7 @@ function main(): Client {
       return;
     }
 
-    const list: string = path.join(__dirname, "..", "..", "data", "list.json");
+    const list: string = path.join(__dirname, "..", "data", "list.json");
     if (!fs.existsSync(list)) {
       console.log(chalk.red("❌ compiledData.json not found!"));
       return;
@@ -261,7 +261,6 @@ function main(): Client {
     const compiledDataPath: string = path.join(
       __dirname,
       "..",
-      "..",
       "data",
       "list.json"
     );
@@ -273,7 +272,6 @@ function main(): Client {
 
     const rolesDataPath: string = path.join(
       __dirname,
-      "..",
       "..",
       "data",
       "roles.json"
