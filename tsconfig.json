@@ -6,7 +6,7 @@
       "moduleResolution": "Node",
       "resolveJsonModule": true,
       "esModuleInterop": true,
-      "target": "ES2018",
+      "target": "es2024",
       "baseUrl": "src",
       "rootDir": "./src",
       "outDir": "./dist",

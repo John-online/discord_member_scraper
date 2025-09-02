@@ -1,0 +1,34 @@
+{
+  "name": "discord_member_scraper",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "tsc && node ./dist/index.js",
+    "dev": "ts-node src/index.ts",
+    "build": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/John-online/discord_member_scraper.git"
+  },
+  "keywords": [
+    "discord",
+    "scraper",
+    "selfbot",
+    "members",
+    "nodejs"
+  ],
+  "author": "SnepCnep & John-online",
+  "license": "MIT",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/John-online/discord_member_scraper/issues"
+  },
+  "homepage": "https://github.com/John-online/discord_member_scraper#readme",
+  "dependencies": {
+    "discord.js-selfbot-v13": "^3.7.0",
+    "dotenv": "^17.2.1",
+    "ts-node": "^10.9.2"
+  }
+}
