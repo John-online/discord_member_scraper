@@ -265,6 +265,12 @@ function main(): Client {
       "data",
       "list.json"
     );
+
+    if (!fs.existsSync(compiledDataPath)) {
+      fs.writeFileSync(compiledDataPath, JSON.stringify({}, null, 2));
+      console.log(chalk.yellow.bold(`🔁 Created file: ${compiledDataPath}`));
+    }
+
     const rolesDataPath: string = path.join(
       __dirname,
       "..",
@@ -272,6 +278,11 @@ function main(): Client {
       "data",
       "roles.json"
     );
+
+    if (!fs.existsSync(rolesDataPath)) {
+      fs.writeFileSync(rolesDataPath, JSON.stringify({}, null, 2));
+      console.log(chalk.yellow.bold(`🔁 Created file: ${rolesDataPath}`));
+    }
 
     let compiledData: CompiledData = {};
     let rolesData: { [userId: string]: { [guildId: string]: string[] } } = {};
